@@ -14,4 +14,10 @@ Not sure yeat how to make the other way to work as a component library
 that can be shared.
 
 # Third attempt
- - Icon font is the best way
+Icon font is the best way so just bring css and font files.
+
+- Size is optimized
+- Font files are cache
+
+There just aint no point doing it other way so no library, best to just
+define to each project as global style dependecy.

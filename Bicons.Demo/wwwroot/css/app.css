@@ -435,11 +435,7 @@ video {
 }
 
 body {
-  /*
-        @apply bg-green-950 dark:bg-black;
-        @apply text-stone-50 dark:text-green-500;
-        @apply font-mono;
-            */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *, ::before, ::after {

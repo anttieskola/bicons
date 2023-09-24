@@ -13,6 +13,13 @@
     <Title>Bootstrap Icons</Title>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="wwwroot\icons\**" />
+    <Content Remove="wwwroot\icons\**" />
+    <EmbeddedResource Remove="wwwroot\icons\**" />
+    <None Remove="wwwroot\icons\**" />
+  </ItemGroup>
 
 
   <ItemGroup>
@@ -21,10 +28,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.11" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\icons\" />
   </ItemGroup>
 
   <ItemGroup>

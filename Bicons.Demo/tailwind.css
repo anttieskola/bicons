@@ -6,14 +6,9 @@
 
 @layer base {
   body {
-    /*
-        @apply bg-green-950 dark:bg-black;
-        @apply text-stone-50 dark:text-green-500;
-        @apply font-mono;
-            */
+    @apply font-mono;
   }
 }
 
 @layer components {
-
 }

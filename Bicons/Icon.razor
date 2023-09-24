@@ -1,4 +1,4 @@
-<img src="@_source" color="red" width="@Size" height="@Size">
+<i class="@_class" style="@_style"></i>
 
 @code {
     [Parameter]
@@ -7,15 +7,24 @@
     [Parameter]
     public int Size { get; set; } = 32;
 
-    private string _source
+
+    private string _class
     {
         get
         {
             if (!string.IsNullOrEmpty(Name))
             {
-              return $"/_content/Bicons/icons/{Name}.svg";
+                return $"bi-{Name}";
             }
-            return $"/_content/Bicons/icons/patch-question-fill.svg";
+            return "bi-alarm";
+        }
+    }
+
+    private string _style
+    {
+        get
+        {
+            return $"font-size: {Size}px;";
         }
     }
 }

@@ -108,8 +108,7 @@
         }
     }
 
-
-    protected async override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         _timer = new Timer(_delay) { AutoReset = true };
         _timer.Elapsed += TriggerAnimation;
