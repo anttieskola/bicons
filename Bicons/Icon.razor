@@ -1,0 +1,21 @@
+<img src="@_source" color="red" width="@Size" height="@Size">
+
+@code {
+    [Parameter]
+    public string Name { get; set; } = string.Empty;
+
+    [Parameter]
+    public int Size { get; set; } = 32;
+
+    private string _source
+    {
+        get
+        {
+            if (!string.IsNullOrEmpty(Name))
+            {
+              return $"/_content/Bicons/icons/{Name}.svg";
+            }
+            return $"/_content/Bicons/icons/patch-question-fill.svg";
+        }
+    }
+}
